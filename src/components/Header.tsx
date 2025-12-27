@@ -35,7 +35,7 @@ const Header = () => {
           <img
             src={oscilatusLogo}
             alt="Oscilatus Logo"
-            className="w-10 h-10 object-contain transition-transform duration-300 group-hover:scale-105"
+            className="w-6 h-6 object-contain transition-transform duration-300 group-hover:scale-105"
           />
           <span className="text-xl font-bold text-foreground tracking-tight">
             Oscilatus
