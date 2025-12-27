@@ -112,8 +112,17 @@ const Footer = () => {
               </p>
             </div>
 
-            {/* Credit */}
-            <p className="text-sm text-muted-foreground text-center">
+            {/* Legal */}
+            <div className="flex flex-col items-center md:items-end gap-2 text-sm text-muted-foreground">
+              <a
+                href="#"
+                className="hover:text-foreground transition-colors"
+              >
+                Privacy Policy
+              </a>
+              <span>© 2025 Oscilatus. All rights reserved.</span>
+              {/* Credit */}
+            <p className="text-xs text-muted-foreground text-center">
               Developed by{" "}
               <a
                 href="https://rovertake.com"
@@ -124,16 +133,6 @@ const Footer = () => {
                 Rovertake
               </a>
             </p>
-
-            {/* Legal */}
-            <div className="flex flex-col items-center md:items-end gap-2 text-sm text-muted-foreground">
-              <a
-                href="#"
-                className="hover:text-foreground transition-colors"
-              >
-                Privacy Policy
-              </a>
-              <span>© 2025 Oscilatus. All rights reserved.</span>
             </div>
           </div>
         </div>
