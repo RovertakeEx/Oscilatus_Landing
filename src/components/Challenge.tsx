@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import {
   AlertCircle,
@@ -65,6 +64,14 @@ const cardVariants = {
     transition: { duration: 0.6, ease: "easeOut" },
   },
 };
+const fadeUp = {
+  hidden: { opacity: 0, y: 24 },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.6, ease: "easeOut" },
+  },
+};
 
 const Challenge = () => {
   return (
@@ -80,13 +87,13 @@ const Challenge = () => {
           className="text-center max-w-3xl mx-auto mb-16"
         >
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-border/50 bg-secondary/30 backdrop-blur-sm mb-6">
-            <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-            <span className="text-sm text-muted-foreground">
-              The Challenge
-            </span>
-          </div>
-
+          <motion.span
+            variants={fadeUp}
+            className="text-sm font-medium text-primary uppercase tracking-wider"
+          >
+            The Challenge
+          </motion.span>
+          
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-6">
             Running a Business Shouldn&apos;t Feel This Hard
           </h2>
