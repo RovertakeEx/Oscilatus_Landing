@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import oscilatusLogo from "../assets/img/oscilatus-logo.png";
 import AuditForm from "./AuditForm";
+import { Linkedin, Facebook, Instagram } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -53,49 +54,90 @@ const Footer = () => {
         </motion.div>
 
         {/* footer Bar section */}
+        {/* Footer Bottom */}
         <div className="border-t border-border/30 pt-12">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-            {/* logo */}
-            <div className="flex flex-col items-center md:items-start gap-2">
+          {/* Main Footer Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+            {/* Logo & Brand */}
+            <div className="flex flex-col items-center md:items-start gap-3">
               <div className="flex items-center gap-3">
                 <img
-            src={oscilatusLogo}
-            alt="Oscilatus Logo"
-            className="w-6 h-6 object-contain transition-transform duration-300 group-hover:scale-105"
-          />
-                <span className="text-lg font-bold text-foreground">
-                  Oscilatus
-                </span>
+                  src={oscilatusLogo}
+                  alt="Oscilatus Logo"
+                  className="w-10 h-10 object-contain"
+                />
+                <span className="text-xl font-bold text-foreground">Oscilatus</span>
               </div>
               <p className="text-sm text-muted-foreground">
                 Digital · Systems · Creative
               </p>
-              <p className="text-xs text-muted-foreground">
+              <p className="text-xs text-muted-foreground/70 italic">
                 Engineering the Next.
               </p>
             </div>
 
-            {/* Legal */}
-            <div className="flex flex-col items-center md:items-end gap-2 text-sm text-muted-foreground">
-              <a
-                href="#"
-                className="hover:text-foreground transition-colors"
-              >
-                Privacy Policy
-              </a>
-              <span>© 2025 Oscilatus. All rights reserved.</span>
-              {/* Credit */}
-            <p className="text-xs text-muted-foreground text-center">
-              Developed by{" "}
-              <a
-                href="https://rovertake.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-primary font-medium hover:text-primary/80 transition-colors"
-              >
-                Rovertake
-              </a>
-            </p>
+            {/* Quick Links */}
+            <div className="flex flex-col items-center md:items-start gap-3">
+              <h4 className="text-sm font-semibold text-foreground uppercase tracking-wider">Quick Links</h4>
+              <nav className="flex flex-col gap-2 text-sm text-muted-foreground">
+                <a href="#services" className="hover:text-primary transition-colors">Services</a>
+                <a href="#audit" className="hover:text-primary transition-colors">Free Audit</a>
+                <a href="#contact" className="hover:text-primary transition-colors">Contact</a>
+              </nav>
+            </div>
+
+            {/* Follow Us */}
+            <div className="flex flex-col items-center md:items-start gap-3">
+              <h4 className="text-sm font-semibold text-foreground uppercase tracking-wider">Follow Us</h4>
+              <div className="flex items-center gap-4">
+                <a 
+                  href="https://linkedin.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 rounded-full bg-card/50 border border-border/30 flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary/50 transition-all"
+                  aria-label="LinkedIn"
+                >
+                  <Linkedin className="w-5 h-5" />
+                </a>
+                <a 
+                  href="https://facebook.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 rounded-full bg-card/50 border border-border/30 flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary/50 transition-all"
+                  aria-label="Facebook"
+                >
+                  <Facebook className="w-5 h-5" />
+                </a>
+                <a 
+                  href="https://instagram.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 rounded-full bg-card/50 border border-border/30 flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary/50 transition-all"
+                  aria-label="Instagram"
+                >
+                  <Instagram className="w-5 h-5" />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Bottom Bar */}
+          <div className="border-t border-border/20 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-muted-foreground">
+            <p>© {new Date().getFullYear()} Oscilatus. All rights reserved.</p>
+            <div className="flex items-center gap-6">
+              <a href="#" className="hover:text-foreground transition-colors">Privacy Policy</a>
+              <span className="hidden sm:inline text-border/50">|</span>
+              <p>
+                Developed by{" "}
+                <a 
+                  href="https://rovertake.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-primary hover:text-primary/80 font-medium transition-colors"
+                >
+                  Rovertake
+                </a>
+              </p>
             </div>
           </div>
         </div>
