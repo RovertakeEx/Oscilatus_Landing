@@ -24,6 +24,7 @@ const AuditForm = () => {
         (result) => {
           toast.success("Email sent successfully!");
           form.current?.reset();
+          console.log(result.text);
         },
         (error) => {
           toast.error("Failed to send email. Please try again.");
