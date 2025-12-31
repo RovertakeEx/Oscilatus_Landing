@@ -1,7 +1,6 @@
-import React from "react";
 import { motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
 import oscilatusLogo from "../assets/img/oscilatus-logo.png";
+import AuditForm from "./AuditForm";
 
 const Footer = () => {
   return (
@@ -49,43 +48,7 @@ const Footer = () => {
             </div>
 
             {/* Form */}
-            <form className="space-y-4">
-              <div className="grid sm:grid-cols-2 gap-4">
-                <input
-                  type="text"
-                  placeholder="Your Name"
-                  required
-                  className="h-10 w-full rounded-md border border-border/50 bg-card/50 px-3 py-2 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:border-primary"
-                />
-                <input
-                  type="email"
-                  placeholder="Email Address"
-                  required
-                  className="h-10 w-full rounded-md border border-border/50 bg-card/50 px-3 py-2 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:border-primary"
-                />
-              </div>
-
-              <input
-                type="text"
-                placeholder="Company Name"
-                className="h-10 w-full rounded-md border border-border/50 bg-card/50 px-3 py-2 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:border-primary"
-              />
-
-              <textarea
-                rows={4}
-                required
-                placeholder="Tell us briefly about your business and current operational challenges..."
-                className="min-h-[80px] w-full resize-none rounded-md border border-border/50 bg-card/50 px-3 py-2 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:border-primary"
-              />
-
-              <button
-                type="submit"
-                className="group inline-flex h-12 w-full items-center justify-center gap-2 rounded-lg bg-gradient-to-r from-primary to-accent px-8 text-base font-semibold text-primary-foreground shadow-glow-md transition-all duration-300 hover:shadow-glow-lg hover:scale-[1.02] active:scale-[0.98]"
-              >
-                Submit Audit Request
-                <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
-              </button>
-            </form>
+            <AuditForm/>
           </div>
         </motion.div>
 
