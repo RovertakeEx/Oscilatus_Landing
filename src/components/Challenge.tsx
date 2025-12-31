@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import { motion } from "framer-motion";
+=======
+import { motion, easeOut } from "framer-motion";
+>>>>>>> main
 import {
   AlertCircle,
   Clock,
@@ -61,7 +65,7 @@ const cardVariants = {
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.6, ease: "easeOut" },
+    transition: { duration: 0.6, ease: easeOut },
   },
 };
 const fadeUp = {
