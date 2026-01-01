@@ -68,7 +68,7 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.5 }}
             className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6"
           >
-            <button onClick={scrollToAudit} className="inline-flex items-center justify-center gap-2 whitespace-nowrap font-semibold ring-offset-background transition-all duration-300 bg-gradient-to-r from-primary to-accent text-primary-foreground shadow-glow-md hover:shadow-glow-lg hover:scale-[1.02] active:scale-[0.98] h-14 rounded-xl px-10 text-lg group">
+            <button onClick={scrollToAudit} className="inline-flex items-center justify-center gap-2 whitespace-nowrap font-semibold ring-offset-background transition-all duration-300 bg-gradient-to-r from-primary to-accent text-primary-foreground shadow-glow-md hover:shadow-glow-lg hover:scale-[1.02] active:scale-[0.98] rounded-xl h-14 px-10 group text-xs sm:text-lg">
               Get Free Business Systems Audit
               <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
             </button>

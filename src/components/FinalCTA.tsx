@@ -33,7 +33,7 @@ export const FinalCTA = () => {
             Our free audit will show you exactly where technology can make the biggest impact.
           </p>
 
-          <button onClick={scrollToContact} className="inline-flex items-center justify-center gap-2 whitespace-nowrap font-semibold ring-offset-background transition-all duration-300 bg-gradient-to-r from-primary to-accent text-primary-foreground shadow-glow-md hover:shadow-glow-lg hover:scale-[1.02] active:scale-[0.98] h-14 rounded-xl px-10 text-lg group">
+          <button onClick={scrollToContact} className="inline-flex items-center justify-center gap-2 whitespace-nowrap font-semibold ring-offset-background transition-all duration-300 bg-gradient-to-r from-primary to-accent text-primary-foreground shadow-glow-md hover:shadow-glow-lg hover:scale-[1.02] active:scale-[0.98] h-14 rounded-xl px-10 text-lg group text-xs sm:text-lg">
             Get Your Free Business Systems Audit
             <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
           </button>
