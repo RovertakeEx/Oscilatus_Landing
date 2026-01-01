@@ -138,9 +138,9 @@ const Footer = () => {
           <div className="border-t border-border/20 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-muted-foreground">
             <div className="flex items-center gap-1">
               <p>© {new Date().getFullYear()} {" "}
-                <a className="text-muted-foreground hover:text-primary/80 font-medium transition-colors" href="https://oscilatus.com">Oscilatus</a>       
+                <a className="text-muted-foreground hover:text-primary/80 font-medium transition-colors" href="https://oscilatus.com">Oscilatus.</a> All rights reserved.       
               </p>
-              <span className="hidden sm:inline text-border/50">|</span>
+              {/* <span className="hidden sm:inline text-border/50">|</span>
               <p>Powered by{" "}
                   <a 
                     href="https://rovertake.com" 
@@ -150,7 +150,7 @@ const Footer = () => {
                   >
                     Rovertake
                   </a>
-              </p>
+              </p> */}
             </div>
             <div className="flex items-center gap-3">
               <a href="#" className="hover:text-foreground transition-colors">Privacy Policy</a>
