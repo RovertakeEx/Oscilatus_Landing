@@ -132,3 +132,11 @@
     linear-gradient(90deg, hsl(var(--border) / 0.1) 1px, transparent 1px);
   background-size: 60px 60px;
 }
+
+.toast-theme .Toastify__toast-icon svg {
+  fill: hsl(var(--primary)) !important;
+}
+
+.toast-theme .Toastify__progress-bar {
+  background: hsl(var(--primary))!important;
+}

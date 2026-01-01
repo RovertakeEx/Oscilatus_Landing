@@ -22,12 +22,12 @@ const AuditForm = () => {
       )
       .then(
         (result) => {
-          toast.success("Email sent successfully!");
+          toast.success("Email sent successfully!", { className: "toast-theme bg-gradient-to-t from-primary/10 via-background to-background" });
           form.current?.reset();
           console.log(result.text);
         },
         (error) => {
-          toast.error("Failed to send email. Please try again.");
+          toast.error("Failed to send email. Please try again.", { className: "bg-gradient-to-t from-primary/10 via-background to-background" });
           console.error(error);
         }
       )

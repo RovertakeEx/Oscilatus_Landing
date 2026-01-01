@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import oscilatusLogo from "../assets/img/oscilatus-logo.png";
 import AuditForm from "./AuditForm";
-import { Linkedin, Facebook, Instagram } from "lucide-react";
+import { Linkedin, Facebook, Instagram, MessageCircle } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -77,67 +77,85 @@ const Footer = () => {
             </div>
 
             {/* Quick Links */}
-            <div className="flex flex-col items-center md:items-start gap-3">
-              <h4 className="text-sm font-semibold text-foreground uppercase tracking-wider">Quick Links</h4>
-              <nav className="flex flex-col gap-2 text-sm text-muted-foreground">
-                <a href="#services" className="hover:text-primary transition-colors">Services</a>
-                <a href="#audit" className="hover:text-primary transition-colors">Free Audit</a>
-                <a href="#contact" className="hover:text-primary transition-colors">Contact</a>
-              </nav>
+            <div className="flex flex-col items-center justify-center">
+              <div className="flex flex-col items-center md:items-start gap-3">
+                <h4 className="text-sm font-semibold text-foreground uppercase tracking-wider">Quick Links</h4>
+                <nav className="flex flex-col gap-2 text-sm text-muted-foreground">
+                  <a href="#services" className="hover:text-primary transition-colors">Services</a>
+                  <a href="#audit" className="hover:text-primary transition-colors">Free Audit</a>
+                  <a href="#contact" className="hover:text-primary transition-colors">Contact</a>
+                </nav>
+              </div>
             </div>
 
             {/* Follow Us */}
-            <div className="flex flex-col items-center md:items-start gap-3">
-              <h4 className="text-sm font-semibold text-foreground uppercase tracking-wider">Follow Us</h4>
-              <div className="flex items-center gap-4">
-                <a 
-                  href="https://linkedin.com" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="w-10 h-10 rounded-full bg-card/50 border border-border/30 flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary/50 transition-all"
-                  aria-label="LinkedIn"
-                >
-                  <Linkedin className="w-5 h-5" />
-                </a>
-                <a 
-                  href="https://facebook.com" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="w-10 h-10 rounded-full bg-card/50 border border-border/30 flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary/50 transition-all"
-                  aria-label="Facebook"
-                >
-                  <Facebook className="w-5 h-5" />
-                </a>
-                <a 
-                  href="https://instagram.com" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="w-10 h-10 rounded-full bg-card/50 border border-border/30 flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary/50 transition-all"
-                  aria-label="Instagram"
-                >
-                  <Instagram className="w-5 h-5" />
-                </a>
+            <div className="flex flex-col item-center md:items-end ">
+              <div className="flex flex-col items-center md:items-start gap-3">
+                <h4 className="text-sm font-semibold text-foreground uppercase tracking-wider">Follow Us</h4>
+                <div className="flex items-center gap-4">
+                  <a 
+                    href="https://www.linkedin.com/company/oscilatus" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="w-10 h-10 rounded-full bg-card/50 border border-border/30 flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary/50 transition-all"
+                    aria-label="LinkedIn"
+                  >
+                    <Linkedin className="w-5 h-5" />
+                  </a>
+                  <a 
+                    href="https://www.facebook.com/Oscilatus" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="w-10 h-10 rounded-full bg-card/50 border border-border/30 flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary/50 transition-all"
+                    aria-label="Facebook"
+                  >
+                    <Facebook className="w-5 h-5" />
+                  </a>
+                  <a 
+                    href="https://www.instagram.com/oscilatus" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="w-10 h-10 rounded-full bg-card/50 border border-border/30 flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary/50 transition-all"
+                    aria-label="Instagram"
+                  >
+                    <Instagram className="w-5 h-5" />
+                  </a>
+                  <a 
+                    href="https://wa.me/94740360711" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="w-10 h-10 rounded-full bg-card/50 border border-border/30 flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary/50 transition-all"
+                    aria-label="Whatsapp"
+                  >
+                    <MessageCircle className="w-5 h-5" />
+                  </a>
+                </div>
               </div>
-            </div>
+            </div>           
           </div>
 
           {/* Bottom Bar */}
           <div className="border-t border-border/20 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-muted-foreground">
-            <p>© {new Date().getFullYear()} Oscilatus. All rights reserved.</p>
-            <div className="flex items-center gap-6">
+            <div className="flex items-center gap-1">
+              <p>© {new Date().getFullYear()} {" "}
+                <a className="text-muted-foreground hover:text-primary/80 font-medium transition-colors" href="https://oscilatus.com">Oscilatus</a>       
+              </p>
+              <span className="hidden sm:inline text-border/50">|</span>
+              <p>Powered by{" "}
+                  <a 
+                    href="https://rovertake.com" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-muted-foreground hover:text-primary/80 font-medium transition-colors"
+                  >
+                    Rovertake
+                  </a>
+              </p>
+            </div>
+            <div className="flex items-center gap-3">
               <a href="#" className="hover:text-foreground transition-colors">Privacy Policy</a>
               <span className="hidden sm:inline text-border/50">|</span>
-              <p>
-                Developed by{" "}
-                <a 
-                  href="https://rovertake.com" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-primary hover:text-primary/80 font-medium transition-colors"
-                >
-                  Rovertake
-                </a>
-              </p>
+              <a href="#" className="hover:text-foreground transition-colors">Terms of Service</a>
             </div>
           </div>
         </div>
